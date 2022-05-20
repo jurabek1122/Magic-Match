@@ -51,3 +51,41 @@ button:hover {
   transform: rotateY(90deg);
   transition-delay: 0s;
 }
+
+@media only screen and (max-width: 500px) {
+  .card-grid {
+    margin: 40px 0 40px 20px !important;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr !important;
+    grid-gap: 25px;
+    width: 80px !important;
+  }
+  .card {
+  position: relative;
+  width: 80px !important;
+  height: 80px !important;
+  }
+  .App {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  /* .App {
+    padding: 20px;
+  } */
+  .card-grid {
+    margin-top: 40px !important;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 25px;
+    width: 130px;
+  }
+  .card {
+    position: relative;
+    width: 130px;
+    height: 130px;
+    }
+}
